@@ -1,0 +1,421 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Barra Navegacion */
+
+nav.navbar {
+    background-color: #919191 !important;
+    margin-top: 2px;
+    margin-left: 13px;
+    margin-right: 13px;
+    border-radius: 20px;
+}
+
+/* Container Bootstrap*/
+
+.container{
+    margin-bottom: 100px;
+}
+
+.indexcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Propiedades Dropdown Navbar */
+
+.custom-dropdown {
+    background-color: #919191;
+    color: #fff;
+    border: 0px;
+    font-family: 'Geologica', sans-serif;
+    border-radius: 50px;
+}
+
+.dropdown-menu {
+    min-width: 120px;
+    max-width: 120px;
+    font-size: 14px;
+}
+
+.dropdown-menu .dropdown-item {
+    background-color: #fff !important;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    font-family: 'Geologica', sans-serif;
+    color: #FFFFFF;
+}
+
+/* Texto: Lo mas vendido*/
+
+.vendido {
+    font-family: 'Geologica', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Barra de navegacion */
+
+.navbar-brand .logo-img {
+    margin-right: 10px;
+}
+
+.navbar-brand .logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    color: #FFFFFF;
+}
+
+/* Propiedades del Footer */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #919191;
+    padding: 10px 0;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Propiedades & Animaciones cartas Index */
+
+.card {
+    width: calc(33.33% - 40px);
+    padding: 20px;
+    margin: 0 9px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .04);
+    transition: .4s ease;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .card-image {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    padding: 0 20px;
+    text-align: center;
+    background: #f4f7f8;
+    border-radius: 12px;
+}
+
+.card .card-image img {
+    width: 100%;
+    transition: .4s ease;
+    border-radius: 12px;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.02) rotate(-3deg) translateX(-5px);
+}
+
+.card .card-image #favicon {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 12px;
+    right: 12px;
+    padding: 10px;
+    color: #919191;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .04);
+}
+
+.card .card-content h3 {
+    color: #222;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.card .card-content p {
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 8px 0 22px;
+    text-align: justify;
+}
+
+.card .card-content button {
+    cursor: pointer;
+    color: #fff;
+    width: 250px !important;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #777777, #919191);
+}
+
+/* Distancia del Icono Carrito del Dropdown */
+
+.cart {
+    margin-right: 12px;
+}
+
+/* No Scrollbar */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Propiedades Carrito Compras*/
+
+#carrito {
+    overflow-x: auto;
+}
+
+
+#carrito table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#carrito table thead {
+    font-weight: 700;
+}
+
+#carrito table thead td {
+    background-color: #919191;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+    font-family: 'Geologica', sans-serif;
+}
+
+#carrito table td {
+    border: 1px solid #7d7d7d;
+    text-align: center;
+}
+
+#carrito table td:nth-child(1) {
+    width: 100px;
+}
+
+#carrito table td:nth-child(2),
+#carrito table td:nth-child(3) {
+    width: 200px;
+}
+
+#carrito table td:nth-child(4),
+#carrito table td:nth-child(5),
+#carrito table td:nth-child(6) {
+    width: 170px;
+}
+
+#carrito table tbody .imgproductos {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+
+}
+
+#carrito-bottom {
+    margin-bottom: 60px;
+}
+
+#carrito-bottom .cupon>div,
+#carrito-bottom .total>div {
+    border: 1px solid #7d7d7d;
+}
+
+#carrito-bottom .cupon h5,
+#carrito-bottom .total h5 {
+    background-color: #919191;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 700;
+}
+
+#carrito-bottom .cupon p,
+#carrito-bottom .cupon input {
+    padding: 0 12px;
+
+}
+
+#carrito-bottom .cupon input {
+    height: 36px;
+}
+
+#carrito-bottom .cupon input {
+    margin: 0 0 20px 12px;
+}
+
+#carrito-bottom .total div>div {
+    padding: 0 12px;
+}
+
+#carrito-bottom button {
+    margin: 12px;
+}
+
+#carrito-bottom .total h6 {
+    color: #000;
+}
+
+/* Adaptacion Manual Resoluciones */
+
+@media (max-width: 1280px) {
+    body {
+        height: unset;
+        padding: 30px 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container .card {
+        margin: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container .card {
+        width: 300px;
+        margin: 9;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .container .card {
+        width: calc(50% - 40px);
+        margin: 7px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .card {
+        width: 60%;
+        margin: 9px;
+    }
+}
+
+@media (max-width: 530px) {
+    .container .card {
+        width: 100%;
+        margin: 50px;
+    }
+}
+
+@media (max-width: 452px) {
+    .container .card {
+        width: 100%;
+        margin: 50px;
+    }
+
+    .container .card .card-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card .card-content button {
+        width: 200px !important;
+        height: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container .card {
+        width: 100%;
+        margin: 2px;
+    }
+
+    .container .card .card-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card .card-content button {
+        width: 200px !important;
+        height: 50px;
+    }
+}
+
+@media (max-width: 222px) {
+    .container .card {
+        width: 100%;
+        margin: 1px;
+    }
+
+    .container .card .card-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card .card-content button {
+        width: 150px !important;
+        height: 50px;
+    }
+}
+
+@media (max-width: 190px) {
+    .container .card {
+        width: 100%;
+        margin: 0px;
+        font-size: 10px;
+    }
+
+    .container .card .card-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .card .card-content button {
+        width: 120px !important;
+        height: 100px;
+    }
+}
