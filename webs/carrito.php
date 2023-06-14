@@ -148,6 +148,8 @@
                 <a href="#">Facebook</a>
                 <a href="#">WhatsApp</a>
                 <a href="#">Twitter</a>
+                <a href="https://github.com/zRdriyw/cljewelry">GitHub</a>
+                <a href="#">13/06/23</a>
             </div>
             <div class="col">
                 <a href="./faq.php">FAQ</a>

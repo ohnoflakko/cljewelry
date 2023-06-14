@@ -39,88 +39,118 @@
             </div>
         </div>
     </nav>
-    <h2 class="vendido">¡Los Más Vendidos!</h2>
+
+    <h2 class="subtitulo">¡Los Más Vendidos!</h2>
+    <div class="contenedor-hr">
+        <hr id="separador">
+    </div>
     <div class="container">
         <div class="indexcards">
-        <div class="card">
-            <div class="card-image">
-                <img src="./src/galeria/p1.png" alt="...">
-                <img id="favicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII="/>
+            <!-- Contenido de la página -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="./src/galeria/p1.png" alt="Cadena Oro Grumet">
+                    <img id="favicon"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII=" />
+                </div>
+                <div class="card-content">
+                    <h3>Cadena Oro Grumet</h3>
+                    <p>Tamaños: 60cm, 50cm, 40cm, 35cm</p>
+                    <p>$300.000</p>
+                    <button class="add-to-cart" id="addcart1">
+                        Ver mas
+                    </button>
+                </div>
             </div>
-            <div class="card-content">
-                <h3>Cadena Oro Grumet</h3>
-                <p>Tamaños: 60cm, 50cm, 40cm, 35cm</p>
-                <p>$300.000</p>
-                <button class="add-to-cart">
-                    Add To Cart
-                </button>
+
+            <!-- Popup Primer Producto-->
+            <div class="popup" id="p1">
+                <div class="popup-content">
+                    <span class="close-button">&times;</span>
+                    <img src="./src/galeria/p1.png" alt="Cadena Oro Grumet">
+                    <h3>Cadena Oro Grumet</h3>
+                    <div class="contenedor-hr">
+                        <hr id="separador">
+                    </div>
+                    <p>Nuestra cadena de oro de 18k grumet ofrece elegancia atemporal, artesanía excepcional y brillo
+                        cautivador. Resalta tu estilo con sofisticación y distinción.</p>
+                    <p><b>Tamaños</b> <br> 60cm, 50cm, 40cm, 35cm</p>
+                    <p><b>Precio</b><br> $300.000</p>
+                    <p>Valoración: 4 estrellas</p>
+                    <button type="button" class="btn btn-outline-secondary ml-auto">Pagar</button>
+                    <button type="button" class="btn btn-outline-secondary ml-auto">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="./src/galeria/p2.png" alt="Anillo Acero Inoxidable">
+                    <img id="favicon"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII=" />
+                </div>
+                <div class="card-content">
+                    <h3>Anillo A. Inoxidable</h3>
+                    <p>Tallas: 18, 19, 20, 21</p><br>
+                    <p>$2.000</p>
+                    <button class="add-to-cart" id="addcart2">
+                        <a href="./webs/anillos.php">Ver mas</a>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="./src/galeria/p3.png" alt="Cadena Oro Turbillon">
+                    <img id="favicon"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII=" />
+                </div>
+                <div class="card-content">
+                    <h3>Cadena Oro Turbillon</h3>
+                    <p>Tamaños: 60cm, 50cm, 40cm, 35cm</p>
+                    <p>$300.000</p>
+                    <button class="add-to-cart">
+                        <a href="./webs/cadenas.php">Ver Producto</a>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="./src/galeria/p4.png" alt="Brazalete De Plata">
+                    <img id="favicon"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII=" />
+                </div>
+                <div class="card-content">
+                    <h3>Brazalete Plata</h3>
+                    <p>Tamaños: 16cm, 14cm, 10cm, 8cm</p>
+                    <p>$30.000</p>
+                    <button class="add-to-cart">
+                        <a href="./webs/brazaletes.php">Ver Producto</a>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="./src/galeria/p5.png" alt="Broche Flor Plata">
+                    <img id="favicon"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII=" />
+                </div>
+                <div class="card-content">
+                    <h3>Broche Flor Plata</h3>
+                    <p>Tamaños: 8cm<br><br></p>
+                    <p>$8.000</p>
+                    <button class="add-to-cart">
+                        <a href="./webs/broches.php">Ver Producto</a>
+                    </button>
+                </div>
             </div>
         </div>
-
-
-        <div class="card">
-            <div class="card-image">
-                <img src="./src/galeria/p2.png" alt="...">
-                <img id="favicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII="/>
-            </div>
-            <div class="card-content">
-                <h3>Anillo A. Inoxidable</h3>
-                <p>Tallas: 18, 19, 20, 21</p><br>
-                <p>$2.000</p>
-                <button class="add-to-cart">
-                    Add To Cart
-                </button>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-image">
-                <img src="./src/galeria/p3.png" alt="...">
-                <img id="favicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII="/>
-            </div>
-            <div class="card-content">
-                <h3>Cadena Oro Turbillon</h3>
-                <p>Tamaños: 60cm, 50cm, 40cm, 35cm</p>
-                <p>$300.000</p>
-                <button class="add-to-cart">
-                    Add To Cart
-                </button>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-image">
-                <img src="./src/galeria/p4.png" alt="...">
-                <img id="favicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII="/>
-            </div>
-            <div class="card-content">
-                <h3>Brazalete Plata</h3>
-                <p>Tamaños: 16cm, 14cm, 10cm, 8cm</p>
-                <p>$30.000</p>
-                <button class="add-to-cart">
-                    Add To Cart
-                </button>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-image">
-                <img src="./src/galeria/p5.png" alt="...">
-                <img id="favicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgJJREFUSEu1VdF1E0EMlNRATAU4FcRUgFMBUAF2A6vbCggVrOUGEipIOiB0EFeAO8BpQOLp3p7ZnG/vnYHsj5/v3s6MpBkdwisffGV8OItARJ4AwJj53VRhkwm22+3KzG4dGBHXIYS7KSSTCUTkEQDeZ4LHEML1fyNIKS2J6LuZPWeCC1W9jjE66eiZVIGIPADABwD4mtG+AMA3Zl79M0FKaU5EPx1IVd/4LxH9yv8vY4z7MZJjBSmlj0R0ZWYOOPdLZjYDgEUGOCoWER/w5/z8CREPmXCPiHtV3cUYveo/NhURqynx3pvZolPrVSGiA1/U7jBzK/5YQWlD76+quspDjNG9Xz0pJa9wRkQbALjq2/jFkP/G6ymlGSImRPScPBNRU2bkxEUliZndNU2zrsl3cLevzym3cdmveNCmvUpiCMHLPzl5dbgxfEYn4C9m0L8tIg7K7n1mvqkQuEXfjoWuGrRuNajqp85yAyJauyJitcoxgta2Hq4Y48HdQkTtslPVtfc6Z+ceAH4w83KoykGCbvcAwI6ZFyLiLfL1UJ4bVZUi1a2QPkltyI2ZJQDoMtCludxFjuXvPe3zWisHCYrl1gnaqeqqs2Bul/e/DVY+g8tvkGCz2RyKNTDmorJ1e2a+nNSi7G8f5lH1SNh8+O3Xzec1iWBk9Zz9atIH52zU4sJvgsMbKC8XPV0AAAAASUVORK5CYII="/>
-            </div>
-            <div class="card-content">
-                <h3>Broche Flor Plata</h3>
-                <p>Tamaños: 8cm<br><br></p>
-                <p>$8.000</p>
-                <button class="add-to-cart">
-                    Add To Cart
-                </button>
-            </div>
-        </div>
-    </div>
     </div>
 
 
@@ -132,6 +162,8 @@
                 <a href="#">Facebook</a>
                 <a href="#">WhatsApp</a>
                 <a href="#">Twitter</a>
+                <a href="https://github.com/zRdriyw/cljewelry">GitHub</a>
+                <a href="#">13/06/23</a>
             </div>
             <div class="col">
                 <a href="./webs/faq.php">FAQ</a>
@@ -189,6 +221,19 @@
 
         typeEffect();
 
+        const addToCartButtons = document.querySelectorAll('#addcart1');
+        const popup = document.querySelector('#p1');
+        const closeButton = document.querySelector('.close-button');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                popup.style.display = 'flex';
+            });
+        });
+
+        closeButton.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
     </script>
 </body>
 

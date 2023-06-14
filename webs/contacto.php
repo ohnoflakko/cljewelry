@@ -37,13 +37,15 @@
     </div>
 
     <footer class="footer">
-        <div class="container">
+
             <div class="row">
                 <div class="col">
                     <a href="#">Instagram</a>
                     <a href="#">Facebook</a>
                     <a href="#">WhatsApp</a>
                     <a href="#">Twitter</a>
+                    <a href="https://github.com/zRdriyw/cljewelry">GitHub</a>
+                    <a href="#">13/06/23</a>
                 </div>
                 <div class="col">
                     <a href="./faq.php">FAQ</a>
@@ -52,7 +54,7 @@
                     <a href="#">Alvey Silvestre</a>
                     <a href="https://www.inscovald.cl/web/">Institucion</a>
                 </div>
-            </div>
+
         </div>
     </footer>
 

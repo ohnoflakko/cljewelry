@@ -14,7 +14,7 @@ nav.navbar {
 
 /* Container Bootstrap*/
 
-.container{
+.container {
     margin-bottom: 100px;
 }
 
@@ -56,16 +56,28 @@ nav.navbar {
     color: #FFFFFF;
 }
 
+/* Propiedades lineas horizontales */
+.contenedor-hr{
+    display: grid;
+    place-items: center;
+}
+
+#separador {
+    height: 12px;
+    width: 75%;
+    border-radius: 15px;
+    background-color: #919191;
+}
+
 /* Texto: Lo mas vendido*/
 
-.vendido {
+.subtitulo {
     font-family: 'Geologica', sans-serif;
     font-size: 30px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
 }
 
 /* Barra de navegacion */
@@ -112,7 +124,7 @@ nav.navbar {
     box-shadow: 0 0 30px rgba(0, 0, 0, .04);
     transition: .4s ease;
     display: flex;
-    
+
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -192,6 +204,55 @@ nav.navbar {
     font-weight: 600;
     border-radius: 12px;
     background: linear-gradient(45deg, #777777, #919191);
+}
+
+.card .card-content button a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Estilos para el popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 320px;
+    text-align: center;
+    position: relative; 
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px #fff;
+}
+.popup-content h3{
+    font-family: 'Geologica', sans-serif;
+    margin-top: 20px;
+}
+
+.popup-content img{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px #000;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAN9JREFUSEvtlNENwjAMRK+ZgE3oCLABjOJJMgpsQEeATZjAQq6MFIITJ0gRP+1n5d6L7y6dMPiZButjA7gO/9eiGOMJwEJET+uoMcYdgAMRXUurFDcQ8RDCBcCdmY85RMRDCDcAMzOfS5AaQAQWAPsckooDeDCzbGFuWc1AhT4gYsX75J64zLoh5xD1em4RbwLIUAaRV1Vb0sDdDRLAGqh+bAZvNckF5IGqyFfw3TU1Tr7aoiGb7eraoFZFq13dNU0umhloCvnpoqlF434V7m+yccBtUaNOcWwDuA4Ot+gFY6qaGb64M/gAAAAASUVORK5CYII=");
 }
 
 /* Distancia del Icono Carrito del Dropdown */
